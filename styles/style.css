@@ -1,0 +1,72 @@
+:root {
+    --dark-blue: #0D1D34;
+    --blue: #182D4D;
+    --yellow: #FAC60A;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1240px;
+        max-width: calc(100vw - 30px);
+    }
+}
+
+.header {
+    background: var(--dark-blue);
+    padding: 15px 0;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 4px;
+    border-radius: 18px;
+    border: 1px solid #000;
+    transition: all 0.3s;
+}
+
+.header-button-text {
+    margin: 0 8px;
+    font-weight: 600;
+}
+
+.promotions-button {
+    background: var(--blue);
+    border-color: var(--blue);
+    margin-right: 24px;
+    color: #fff;
+}
+
+.promotions-button:hover {
+    background: rgba(var(--blue), 0);
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.header-button-img {
+    height: 100%;
+    transform: scale(1.55);
+}
+
+.free-money-button {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--blue);
+}
+
+.free-money-button:hover {
+    background: rgba(var(--yellow), 0);
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.free-money-button .header-button-img {
+    position: relative;
+    top: 4px;
+    transform: scale(1.95);
+}
