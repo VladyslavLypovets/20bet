@@ -26,6 +26,9 @@
     font-size: 20px;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+}
 /* helpers end */
 
 /* Button with white hover border */
@@ -467,3 +470,103 @@
     font-size: 16px;
 }
 /* welcome-bonus end */
+
+/*game-block section*/
+
+.game-block {
+    margin-top: 48px;
+}
+
+.game-block .game-block--border {
+    border: 2px solid #F2F3F6;
+    border-radius: 36px;
+    padding: 44px;
+}
+
+.game-block-mini {
+    padding: 16px 16px 24px;
+    background: linear-gradient(66.87deg, #1A2A41 3.98%, #193761 100.83%);
+    border-radius: 24px;
+}
+
+.game-block-mini--heading .game-block-mini--heading-h3 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.game-block-mini .game-block-mini--background-img {
+    background: #6D839E;
+    border-radius: 100%;
+    height: 58px;
+    width: 58px;
+}
+.game-block-mini .game-block-mini--background-im .game-block-mini--img {
+    width: 34px;
+    height: 34px;
+}
+
+.game-block-mini .game-block-mini--p {
+    font-size: 16px;
+    color: #9EA8B5;
+}
+
+/*game-block end*/
+
+/*advantages section*/
+.advantages {
+    margin-top: 48px;
+}
+
+.advantages .advantages--border {
+    border: 2px solid #F2F3F6;
+    padding: 44px;
+    border-radius: 36px;
+    background-image: url(../img/advantages.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+}
+
+.advantages .advantages--h {
+    font-size: 36px;
+    color: #060714;
+    margin: 44px 0px 36px;
+    text-transform: uppercase;
+}
+
+.advantages .advantages--list-items {
+    width: 100%;
+    border: 1px solid #F2F3F6;
+    border-radius: 100px;
+    padding: 4px 24px 4px 4px;
+    background: linear-gradient(90deg, #F5F8FC 0%, #FCFDFF 76%);
+    margin-bottom: 10px;
+}
+
+.advantages .advantages--list-items .advantages-list-items--background-img{
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.advantages .advantages-list-items---background-img .advantages-list-items--img {
+    width: 24px;
+    height: 24px;
+}
+
+.advantages .advantages--text-h3{
+    font-size: 20px;
+    color: #182D4D;
+
+}
+
+.advantages .advantages--text-p{
+    font-size: 16px;
+    color: #9EA8B5;
+}
+
+.advantages .button-border-hover span{
+    height: 54px;
+}
