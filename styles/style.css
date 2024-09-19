@@ -149,7 +149,7 @@ h1, h2, h3, p {
 }
 
 .free-money-button svg path{
-    stroke: #182D4D;
+    stroke: var(--blue);
     transition: all 0.3s;
 }
 
@@ -311,6 +311,7 @@ h1, h2, h3, p {
 
 .banner .carousel-item .slider-img {
     min-height: calc(100vh - 112px);
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -492,11 +493,12 @@ h1, h2, h3, p {
 .game-block-mini--heading .game-block-mini--heading-h3 {
     font-size: 20px;
     color: #fff;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .game-block-mini .game-block-mini--background-img {
-    background: #6D839E;
+    background: var(--light-blue);
     border-radius: 100%;
     height: 58px;
     width: 58px;
@@ -508,7 +510,7 @@ h1, h2, h3, p {
 
 .game-block-mini .game-block-mini--p {
     font-size: 16px;
-    color: #9EA8B5;
+    color: var(--blue-300);
 }
 
 /*game-block end*/
@@ -532,7 +534,12 @@ h1, h2, h3, p {
     font-size: 36px;
     color: #060714;
     margin: 44px 0px 36px;
+    font-weight: 700;
     text-transform: uppercase;
+}
+
+.advantages .advantages--list {
+    margin-bottom: 24px;
 }
 
 .advantages .advantages--list-items {
@@ -542,6 +549,10 @@ h1, h2, h3, p {
     padding: 4px 24px 4px 4px;
     background: linear-gradient(90deg, #F5F8FC 0%, #FCFDFF 76%);
     margin-bottom: 10px;
+}
+
+.advantages .advantages--list-items:last-child {
+    margin-bottom: 0;
 }
 
 .advantages .advantages--list-items .advantages-list-items--background-img{
@@ -558,15 +569,118 @@ h1, h2, h3, p {
 
 .advantages .advantages--text-h3{
     font-size: 20px;
-    color: #182D4D;
-
+    color: var(--blue);
+    font-weight: 700;
 }
 
 .advantages .advantages--text-p{
     font-size: 16px;
-    color: #9EA8B5;
+    color: var(--blue-300);
 }
 
 .advantages .button-border-hover span{
     height: 54px;
+}
+
+/* how to sign up */
+.how-to-sign-up {
+    margin-top: 44px;
+}
+
+.how-to-sign-up .how-to-sign-up--background {
+    padding: 44px;
+    background-image: url(../img/registration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 36px;
+}
+
+.how-to-sign-up h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-card {
+    position: relative;
+    background: rgba(242, 243, 246, 0.1);
+    border-radius: 32px;
+    padding-left: 90px;
+    margin-bottom: 20px;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-button {
+    min-height: 64px;
+    overflow: hidden;
+    width: 100%;
+    padding: 4px 0;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-button:focus {
+    outline: none;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-button--step {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    height: 56px;
+    width: 83px;
+    background-image: url(../img/step_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    padding-right: 26px;
+    text-transform: uppercase;
+    padding-top: 4px;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-button--text-top {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-button--text-bottom {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--blue-300);
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-list {
+    list-style: none;
+    padding-top: 16px;
+    margin-bottom: 0;
+    padding-left: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 34px;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-list li {
+    padding-left: 36px;
+    position: relative;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-list li:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
 }
