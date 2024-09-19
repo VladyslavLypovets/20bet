@@ -1,0 +1,12 @@
+$(document).ready(() => {
+    // toggle lang dropdown
+    $('.lang-switch').click(() => {
+        $('.lang-switch-wrap').toggleClass('open');
+    });
+
+    // handler for lang dropdown whe user click on list item
+    $('.lang-switch-list a').click((e) => {
+        e.preventDefault();
+        $('.lang-switch-wrap').removeClass('open');
+    } )
+})
