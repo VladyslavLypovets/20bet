@@ -882,6 +882,7 @@ h1, h2, h3, p {
 }
 
 .casino .casino-inner {
+    border-radius: 36px;
     border: 2px solid #F2F3F6;
     box-shadow: 0px 10px 20px 0px #00000008;
     padding: 44px;
@@ -924,7 +925,12 @@ h1, h2, h3, p {
     margin-top: 44px;
 }
 
+.our-bonuses-row {
+    margin-bottom: 20px;
+}
+
 .our-bonuses .our-bonuses-inner {
+    border-radius: 36px;
     padding: 44px;
     border: 2px solid #F2F3F6;
     box-shadow: 0px 10px 20px 0px #00000008;
@@ -961,7 +967,7 @@ h1, h2, h3, p {
     margin-bottom: 12px;
 }
 
-.our-bonuses-block h3 {
+.our-bonuses .our-bonuses-block h3 {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
@@ -969,16 +975,166 @@ h1, h2, h3, p {
     margin-bottom: 4px;
 }
 
-.our-bonuses-block h3 span {
+.our-bonuses .our-bonuses-block h3 span {
     color: var(--green);
 }
-.our-bonuses-block p {
+
+.our-bonuses .our-bonuses-block p {
     color: var(--blue-300);
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 22px;
 }
 
-.our-bonuses-block .button-border-hover span {
+.our-bonuses .our-bonuses-block .button-border-hover span {
     height: 54px;
+}
+
+.our-bonuses .our-bonuses-big-block {
+    border-radius: 24px;
+    background: var(--dark-blue);
+    background-image: url(../img/our-bonuses-big-block.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.our-bonuses  .our-bonuses-money-bg {
+    background-image: url(../img/our-bonuses-big-block-money.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    padding: 36px;
+}
+
+.our-bonuses .our-bonuses-big-block h3 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.our-bonuses .our-bonuses-big-block h3 span {
+    color: var(--green);
+}
+
+.our-bonuses .our-bonuses-big-block p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blue-300);
+    margin-bottom: 24px;
+    width: 80%;
+}
+
+.our-bonuses .our-bonuses-step-block {
+    position: relative;
+    padding: 24px;
+    background: rgba(54, 76, 107, 0.85);
+    border-radius: 16px;
+}
+
+.our-bonuses .our-bonuses-step-block h4 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.our-bonuses .our-bonuses-step-block h5 {
+    color: var(--yellow);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.our-bonuses .our-bonuses-step-block p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--blue-300)
+}
+
+.our-bonuses .our-bonuses-step-block .our-bonuses-step {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 135px;
+    height: 100%;
+    background-image: url(../img/our-bonuses-big-block-step-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 22px;
+    padding-left: 44px;
+}
+
+.faq {
+    margin-top: 44px;
+}
+
+.faq .faq-inner {
+    border-radius: 36px;
+    border: 2px solid rgba(242, 243, 246, 1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+    padding: 44px;
+}
+
+.faq .faq-inner h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+
+.faq .faq-question-block {
+    position: relative;
+    padding: 17px;
+    padding-left: 78px;
+    background: linear-gradient(90deg, #F5F8FC 0%, #FCFDFF 76%);
+    border: 1px solid rgba(242, 243, 246, 1);
+    border-radius: 30px;
+    margin-bottom: 16px;
+}
+
+.faq .faq-question-block:last-child {
+    margin-bottom: 0;
+}
+
+.faq .faq-question-block h6 {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.faq .faq-question-block p {
+    color: var(--blue-300);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.faq .faq-question-block-number {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 56px;
+    width: 56px;
+    border-radius: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
 }
