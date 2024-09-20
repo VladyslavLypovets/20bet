@@ -22,6 +22,10 @@
     margin-right: 10px;
 }
 
+.margin-bottom-8 {
+    margin-bottom: 8px;
+}
+
 .font-size-20 {
     font-size: 20px;
 }
@@ -588,11 +592,15 @@ h1, h2, h3, p {
 }
 
 .how-to-sign-up .how-to-sign-up--background {
-    padding: 44px;
+    background: var(--banners-blue);
     background-image: url(../img/registration.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 36px;
+}
+
+.how-to-sign-up--padding {
+    padding: 44px;
 }
 
 .how-to-sign-up h2 {
@@ -683,4 +691,183 @@ h1, h2, h3, p {
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
+}
+
+.how-to-sign-up .button-border-hover span {
+    height: 54px;
+}
+
+/* rating block */
+.rating {
+    margin-top: 44px;
+}
+
+.rating .rating--background {
+    border-radius: 36px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.03);
+    padding: 44px;
+    background: #fff;
+    background-image: url(../img/rating_bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+}
+
+.rating .rating--background h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    margin-bottom: 46px;
+}
+
+.rating .rating-row {
+    border-radius: 100px;
+    background: linear-gradient(90deg, #F5F8FC 0%, #FCFDFF 76%);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    border: 1px solid #F2F3F6;
+}
+
+.rating .rating-row:last-child {
+    margin-bottom: 0;
+}
+
+.rating .rating-row-left {
+    border-radius: 100px;
+    padding: 4px 16px 4px 16px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rating .rating-row p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.rating .rating-row-left img {
+    margin-left: 8px;
+}
+
+.rating .rating-right-column {
+    padding-top: 16px;
+}
+
+.rating .rating-right-column img {
+    width: 54px;
+    margin-bottom: 8px;
+}
+
+.rating .rating-right-column h3 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.rating .rating-right-column h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.rating .rating-right-column .button-border-hover span {
+    height: 54px;
+}
+
+/* info block */
+
+.info {
+    margin-top: 44px;
+}
+
+.info .info-inner {
+    border: 2px solid #F2F3F6;
+    box-shadow: 0px 10px 20px 0px #00000008;
+    border-radius: 36px;
+    padding: 44px 36px 36px;
+}
+
+.info .info-inner h2 {
+    font-size: 36px;
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.info .info-table {
+    border: 2px solid #F2F3F6;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.info .info-table-row {
+    background: linear-gradient(90deg, #F5F8FC 0%, #FCFDFF 76%);
+    border-bottom: 1px solid #F2F3F6;
+}
+
+.info .info-table-row:last-child {
+    border-bottom: none;
+}
+
+.info .info-table-row-left {
+    width: 45%;
+    position: relative;
+    padding: 18px 40px;
+}
+
+.info .info-table-row-left:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 34px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: var(--orange);
+}
+
+.info .info-img-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+    background: linear-gradient(142.51deg, #0D1D34 17.34%, #27569A 100%);
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .info-table-row-left h6 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 0;
+    margin-left: 24px;
+}
+
+.info .info-table-row-right {
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.info .info-table-row-right p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: var(--blue-300);
+
 }
