@@ -11,6 +11,10 @@
     --banners-blue: #021229;
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 @media (min-width: 1200px) {
     .container {
         width: 1240px;
@@ -869,5 +873,112 @@ h1, h2, h3, p {
     font-weight: 500;
     margin-bottom: 0;
     color: var(--blue-300);
+}
 
+/* casino block */
+
+.casino {
+    margin-top: 44px;
+}
+
+.casino .casino-inner {
+    border: 2px solid #F2F3F6;
+    box-shadow: 0px 10px 20px 0px #00000008;
+    padding: 44px;
+}
+
+.casino .casino-inner h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--dark-blue);
+}
+
+.casino .casino-inner h2 span {
+    color: var(--light-blue);
+    font-size: 32px;
+}
+
+.casino .casino-show-all {
+    color: var(--green);
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid #7DC72E;
+}
+
+.casino .casino-show-all:hover {
+    text-decoration: none;
+}
+
+.casino .casino-top {
+    margin-bottom: 36px;
+}
+
+.casino .casino-inner img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/* our-bonuses block */
+
+.our-bonuses {
+    margin-top: 44px;
+}
+
+.our-bonuses .our-bonuses-inner {
+    padding: 44px;
+    border: 2px solid #F2F3F6;
+    box-shadow: 0px 10px 20px 0px #00000008;
+}
+
+.our-bonuses .our-bonuses-inner h2 {
+    margin-bottom: 36px;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+
+.our-bonuses .our-bonuses-block {
+    background: var(--dark-blue);
+    background-image: url(../img/our-bonuses-block-bg.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding: 22px;
+    position: relative;
+    border-radius: 24px;
+}
+
+.our-bonuses .our-bonuses-block-icon {
+    position: absolute;
+    top: 0;
+    left: 36px;
+    height: 83px;
+}
+
+.our-bonuses  .our-bonuses-block-money {
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.our-bonuses-block h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.our-bonuses-block h3 span {
+    color: var(--green);
+}
+.our-bonuses-block p {
+    color: var(--blue-300);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.our-bonuses-block .button-border-hover span {
+    height: 54px;
 }
