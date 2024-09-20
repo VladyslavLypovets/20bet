@@ -26,8 +26,12 @@
     margin-right: 10px;
 }
 
-.margin-bottom-8 {
-    margin-bottom: 8px;
+.margin-bottom-24 {
+    margin-bottom: 24px;
+}
+
+.margin-bottom-12 {
+    margin-bottom: 12px;
 }
 
 .font-size-20 {
@@ -92,6 +96,28 @@ h1, h2, h3, p {
 }
 
 /* Button with white hover border end */
+
+/* app button */
+.app-button {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--blue);
+    transition: all .3s;
+}
+
+.app-button svg {
+    margin-right: 12px;
+}
+
+.app-button:hover {
+    text-decoration: none;
+    color: #fff;
+    background: var(--mobile-app-hover-blue);
+}
 
 /* Header Styles start */
 .header {
@@ -180,27 +206,32 @@ h1, h2, h3, p {
     margin-bottom: 0;
 }
 
-.navigation-list li a {
+.navigation-list li a,
+.second-footer-top a.second-footer-link {
     color: #fff;
     margin-right: 35px;
     transition: all 0.3s;
 }
 
-.navigation-list li a span {
+.navigation-list li a span,
+.second-footer-top a.second-footer-link span {
     margin-left: 3px;
 }
 
-.navigation-list li a:hover {
+.navigation-list li a:hover,
+.second-footer-top a.second-footer-link:hover {
     text-decoration: none;
     color: var(--light-blue);
 }
 
-.navigation-list li a svg path.lines {
+.navigation-list li a svg path.lines,
+.second-footer-top a.second-footer-link svg path.lines {
     fill: #fff;
     transition: all .3s;
 }
 
-.navigation-list li a:hover svg path.lines {
+.navigation-list li a:hover svg path.lines,
+.second-footer-top a.second-footer-link:hover svg path.lines {
     fill: var(--light-blue);
 }
 
@@ -1184,10 +1215,10 @@ h1, h2, h3, p {
 .bonuses .bonuses-inner .bonuses--block .bonuses-block--game-border .bonuses-block--game-icon {
     position: absolute;
     right: 50%;
-    transform: translate(50%);
+    transform: translateX(50%) translateY(-50%);
     height: 44px;
     border-radius: 100%;
-    top: -23px;
+    top: 0;
 }
 
 .bonuses .bonuses-inner .bonuses--block .bonuses-block--game {
@@ -1250,6 +1281,7 @@ h1, h2, h3, p {
 
 .general-information {
     margin-top: 44px;
+    margin-bottom: 44px;
 }
 
 .general-information .general-information--border{
@@ -1270,4 +1302,71 @@ h1, h2, h3, p {
     font-weight: 300;
     color: #9EA8B5;
     margin-bottom: 15px;
+}
+
+/* footer style */
+
+footer {
+    background: var(--dark-blue);
+    padding: 36px 0;
+}
+
+footer .logo {
+    margin-right: 26px;
+}
+
+footer .footer-info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--light-blue);
+    margin-bottom: 0;
+    max-width: calc(100% - 110px);
+}
+
+footer .only-18 {
+    width: 60px;
+    height: 60px;
+    background: #F02C2C;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+footer .footer-info-top {
+    margin-bottom: 26px;
+}
+
+footer .navigation-list li a {
+    margin-right: 15px;
+}
+
+/* second footer */
+
+.second-footer {
+    margin-top: 44px;
+}
+
+.second-footer .second-footer-column {
+    width: 25%;
+    margin-right: 6%;
+}
+
+.second-footer .second-footer-sublink {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-blue);
+    margin-bottom: 4px;
+}
+
+.second-footer .second-footer-sublink:hover {
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+.second-footer .second-footer-top {
+    margin-bottom: 26px;
 }
