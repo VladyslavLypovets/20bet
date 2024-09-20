@@ -1141,3 +1141,133 @@ h1, h2, h3, p {
     font-size: 20px;
     font-weight: 700;
 }
+
+/* bonuses block */
+
+.bonuses {
+    margin-top: 44px;
+}
+
+.bonuses .bonuses-inner {
+    border-radius: 36px;
+    border: 2px solid rgba(242, 243, 246, 1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+    padding: 44px;
+}
+
+
+.bonuses .bonuses-inner h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+
+.bonuses .bonuses-inner .bonuses--block {
+    background: var(--dark-blue);
+    background-image: url(../img/our-bonuses-block-bg.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding: 22px;
+    position: relative;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
+.bonuses .bonuses-inner .bonuses--block .bonuses-block--game-border {
+    border: 1px solid #F2F3F6;
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+}
+.bonuses .bonuses-inner .bonuses--block .bonuses-block--game-border .bonuses-block--game-icon {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+    height: 44px;
+    border-radius: 100%;
+    top: -23px;
+}
+
+.bonuses .bonuses-inner .bonuses--block .bonuses-block--game {
+    padding: 20px;
+    background: linear-gradient(98.38deg, rgba(54, 76, 107, 0.5) 0.66%, rgba(105, 147, 209, 0.025) 99.97%);
+    border-radius: 16px;
+}
+.bonuses .bonuses-inner .bonuses-block--game h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.bonuses .bonuses-inner .bonuses-block--game p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9EA8B5;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bonuses .bonuses-inner .button-border-hover--green span {
+    height: 54px;
+}
+
+/* bonuses block end */
+
+/* download block */
+
+.download {
+    margin-top: 44px;
+}
+
+.download .download--background {
+    background-image: url(../img/hand-phone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0;
+    background-color: var(--dark-blue);
+    border-radius: 35px;
+    padding: 40px;
+}
+
+.download .download--block-button .button-border-hover--green:first-child {
+    margin-bottom: 20px;
+}
+
+.download .download--block-button .button-border-hover--green span {
+    height: 54px;
+}
+
+.download .download--block-button .button-border-hover--green span img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* download block end*/
+
+.general-information {
+    margin-top: 44px;
+}
+
+.general-information .general-information--border{
+    box-shadow: 0px 10px 20px 0px #00000008;
+    padding: 44px;
+}
+
+.general-information h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0D1D34;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.general-information p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #9EA8B5;
+    margin-bottom: 15px;
+}
