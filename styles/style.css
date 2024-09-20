@@ -258,6 +258,7 @@ h1, h2, h3, p {
     top: calc(100% + 12px);
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .lang-switch-wrap.open .lang-switch-list-wrap {
@@ -1076,6 +1077,8 @@ h1, h2, h3, p {
     padding-top: 22px;
     padding-left: 44px;
 }
+
+/* faq block */
 
 .faq {
     margin-top: 44px;
