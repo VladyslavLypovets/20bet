@@ -160,8 +160,8 @@ h1, h2, h3, p {
 }
 
 .promotions-button:hover {
-    background: rgba(var(--blue), 0);
-    color: var(--yellow);
+    background: var(--mobile-app-hover-blue);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -171,24 +171,21 @@ h1, h2, h3, p {
 }
 
 .free-money-button {
-    background: var(--yellow);
+    /* background: var(--yellow); */
+    background: linear-gradient(90deg, #FAC60A 0%, #FAC60A 100%);
     border-color: var(--yellow);
     color: var(--blue);
+    transition: all .3s;
 }
 
 .free-money-button:hover {
-    background: rgba(var(--yellow), 0);
-    color: var(--yellow);
+    background: linear-gradient(90deg, #FAC60A 0%, #E37E20 100%);
+    color: var(--blue);
     text-decoration: none;
 }
 
 .free-money-button svg path{
     stroke: var(--blue);
-    transition: all 0.3s;
-}
-
-.free-money-button:hover svg path {
-    stroke: var(--yellow);
 }
 
 .free-money-button .header-button-img {
@@ -936,10 +933,13 @@ h1, h2, h3, p {
     font-size: 20px;
     font-weight: 700;
     border-bottom: 2px solid #7DC72E;
+    transition: all .3s;
 }
 
 .casino .casino-show-all:hover {
     text-decoration: none;
+    color: var(--blue);
+    border-color: var(--blue);
 }
 
 .casino .casino-top {
@@ -1369,4 +1369,110 @@ footer .navigation-list li a {
 
 .second-footer .second-footer-top {
     margin-bottom: 26px;
+}
+
+.second-footer .second-footer-third-column {
+    width: 20%;
+}
+
+.app-button.app-button-second-footer {
+    height: 52px;
+    margin-bottom: 8px;
+    margin-right: 0;
+}
+
+.app-button.app-button-second-footer span {
+    font-size: 14px;
+    color: var(--light-blue);
+}
+
+.app-button.app-button-second-footer label {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.app-button.app-button-second-footer svg {
+    width: 24px;
+    height: 24px;
+}
+
+.app-button.app-button-second-footer img {
+    width: 28px;
+}
+
+.second-footer .second-footer-right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* footer card block */
+
+.footer-card {
+    margin-top: 44px;
+}
+
+.footer-card .social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--blue);
+    border-radius: 100px;
+    margin-right: 14px;
+}
+
+.footer-card .social:last-child {
+    margin-right: 0;
+}
+
+.footer-card .social img {
+    max-width: 18px;
+}
+
+.footer-card .brands {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-card .brands img {
+    max-height: 38px;
+    margin-right: 22px;
+}
+
+.footer-card .brands img.h-20 {
+    max-height: 20px;
+}
+
+.footer-card .brands img.h-25 {
+    max-height: 20px;
+}
+
+
+.footer-card .brands img:last-child {
+    margin-right: 0;
+}
+
+.footer-card .brands-full-row {
+    justify-content: space-between;
+}
+
+.footer-card .brands-full-row img {
+    margin-right: 0;
+}
+
+.footer-card .copyright p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--light-blue);
+    margin-bottom: 0;
+}
+
+.footer-card .verification img {
+    height: 56px;
+}
+.footer-card .verification img:last-child {
+    margin-left: 16px;
 }
