@@ -593,7 +593,7 @@ h1, h2, h3, p {
 }
 
 .advantages .advantages--list-items .advantages-list-items--background-img{
-    width: 56px;
+    min-width: 56px;
     height: 56px;
     background: #fff;
     border-radius: 100%;

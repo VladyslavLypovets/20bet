@@ -1,0 +1,81 @@
+@media(max-width: 1000px) {
+    .tablet-margin-bottom {
+        margin-bottom: 12px;
+    }
+
+    .welcome-bonus-block h1,
+    .rating .rating-right-column h3 {
+        font-size: 38px;
+    }
+
+    .welcome-bonus-block h4 {
+        font-size: 18px;
+    }
+
+    .welcome-bonus-block h2 {
+        font-size: 30px;
+    }
+
+    .welcome-bonus .welcome-bonus-block,
+    .welcome-bonus-block-mini,
+    .advantages .advantages--border {
+        background-size: cover;
+    }
+
+    .game-block .game-block--border,
+    .advantages .advantages--border {
+        padding: 22px;
+    }
+}
+
+@media(max-width: 575px) {
+    .mobile-margin-bottom {
+        margin-bottom: 12px;
+    }
+
+    .game-block-mini .game-block-mini--p {
+        font-size: 14px;
+    }
+
+    .game-block .game-block--border {
+        padding: 0;
+        border: none;
+    }
+    
+    .welcome-bonus-block-mini p {
+        text-align: center;
+    }
+
+    .advantages .advantages--border {
+        background: none;
+    }
+
+    .advantages .advantages--border {
+        padding: 0;
+        padding-bottom: 12px;
+        overflow: hidden;
+        box-shadow: 0px 10px 20px 0px #00000008;
+    }
+
+    .mobile-padding-vertical {
+        padding: 0 12px;
+    }
+
+    .advantages .advantages--h {
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .advantages .advantages--list-items {
+        border-radius: 30px;
+    }
+
+    .advantages .button-border-hover {
+        width: 100%;
+    }
+    
+    .button-border-hover span {
+        justify-content: center;
+    }
+}
