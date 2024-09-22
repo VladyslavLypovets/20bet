@@ -14,5 +14,10 @@ $(document).ready(() => {
     $('.casino-show-all').click((e) => {
         e.preventDefault();
         $('.more-casino').toggleClass('d-none')
+    });
+
+    $('.burger-button').click((e) => {
+        e.preventDefault();
+        $('.mobile-menu').toggleClass('d-none');
     })
 })

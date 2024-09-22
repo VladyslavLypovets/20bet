@@ -26,6 +26,10 @@
     margin-right: 10px;
 }
 
+.max-width-100 {
+    max-width: 100%;
+}
+
 .margin-bottom-24 {
     margin-bottom: 24px;
 }
@@ -260,6 +264,11 @@ h1, h2, h3, p {
 
 .lang-switch-wrap {
     position: relative;
+}
+
+.lang-switch-wrap img {
+    width: 25px;
+    height: 25px;
 }
 
 .lang-switch {
@@ -641,6 +650,7 @@ h1, h2, h3, p {
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 60px;
+    text-transform: uppercase;
 }
 
 .how-to-sign-up .how-to-sign-up--accordion-card {
@@ -679,10 +689,13 @@ h1, h2, h3, p {
     color: #fff;
     font-size: 17px;
     font-weight: 700;
-    text-align: center;
     padding-right: 26px;
     text-transform: uppercase;
     padding-top: 4px;
+}
+
+.how-to-sign-up .how-to-sign-up--accordion-button--step.ok {
+    padding-top: 16px;
 }
 
 .how-to-sign-up .how-to-sign-up--accordion-button--text-top {
@@ -836,6 +849,7 @@ h1, h2, h3, p {
     color: var(--dark-blue);
     font-weight: 700;
     margin-bottom: 24px;
+    text-transform: uppercase;
 }
 
 .info .info-table {
@@ -873,7 +887,7 @@ h1, h2, h3, p {
 }
 
 .info .info-img-wrap {
-    width: 56px;
+    min-width: 56px;
     height: 56px;
     border-radius: 100px;
     background: linear-gradient(142.51deg, #0D1D34 17.34%, #27569A 100%);
@@ -881,6 +895,7 @@ h1, h2, h3, p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 24px;
 }
 
 .info .info-table-row-left h6 {
@@ -888,7 +903,6 @@ h1, h2, h3, p {
     font-weight: 600;
     color: var(--blue);
     margin-bottom: 0;
-    margin-left: 24px;
 }
 
 .info .info-table-row-right {
@@ -921,6 +935,7 @@ h1, h2, h3, p {
     font-weight: 700;
     font-size: 36px;
     color: var(--dark-blue);
+    text-transform: uppercase;
 }
 
 .casino .casino-inner h2 span {
@@ -1263,6 +1278,11 @@ h1, h2, h3, p {
     padding: 40px;
 }
 
+.download .logo-download img{
+    width: 200px;
+    max-width: 100%;
+}
+
 .download .download--block-button .button-border-hover--green:first-child {
     margin-bottom: 20px;
 }
@@ -1386,7 +1406,7 @@ footer .navigation-list li a {
     color: var(--light-blue);
 }
 
-.app-button.app-button-second-footer label {
+.app-button.app-button-second-footer .bottom-text {
     font-size: 16px;
     margin-bottom: 0;
 }
@@ -1439,7 +1459,6 @@ footer .navigation-list li a {
 
 .footer-card .brands img {
     max-height: 38px;
-    margin-right: 22px;
 }
 
 .footer-card .brands img.h-20 {
@@ -1450,8 +1469,11 @@ footer .navigation-list li a {
     max-height: 20px;
 }
 
+.footer-card .brands .img-wrap {
+    margin-right: 22px;
+}
 
-.footer-card .brands img:last-child {
+.footer-card .brands .img-wrap:last-child {
     margin-right: 0;
 }
 
@@ -1473,6 +1495,70 @@ footer .navigation-list li a {
 .footer-card .verification img {
     height: 56px;
 }
+
 .footer-card .verification img:last-child {
     margin-left: 16px;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.mobile-header {
+    box-shadow: 0px 10px 20px 0px #00000008;
+    background: var(--dark-blue);
+    padding: 15px 0;
+}
+
+.burger-button {
+    margin-left: 10px;
+    display: flex;
+    height: 36px;
+    width: 36px;
+    background: var(--blue);
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.burger-button span {
+    width: 20px;
+    height: 4px;
+    border-radius: 100px;
+    background: #fff;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--dark-blue);
+    padding: 15px;
+    z-index: 2;
+}
+
+.mobile-menu-inner {
+    padding-top: 60px;
+}
+
+.mobile-menu-inner .promotions-button {
+    width: 240px;
+    margin-bottom: 22px;
+}
+
+.mobile-menu-inner .free-money-button {
+    width: 190px;
+}
+
+.mobile-menu-inner .border {
+    border: 1px solid var(--light-blue);
+    margin: 30px 0;
+}
+
+.mobile-menu-inner .navigation-list li {
+    margin-bottom: 24px;
 }

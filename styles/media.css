@@ -1,4 +1,86 @@
-@media(max-width: 1000px) {
+@media(max-width: 1200px) {
+    .our-bonuses .our-bonuses-block .button-border-hover span {
+        font-size: 16px;
+    }
+
+    .footer-card .brands {
+        flex-wrap: wrap;
+    }
+
+    .footer-info .navigation-list {
+        flex-wrap: wrap;
+    }
+
+    .footer-login-buttons {
+        flex-direction: column;
+    }
+    
+    footer .navigation-list li a {
+        margin-right: 8px;
+    }
+
+    .navigation-list {
+        max-width: 60%;
+    }
+    
+    .footer-login-buttons .button-border-hover {
+        width: 100%;
+    }
+
+    .footer-login-buttons .button-border-hover:last-child {
+        margin-top: 12px;
+    }
+
+    .second-footer .second-footer-top {
+        flex-wrap: wrap;
+    }
+
+    .second-footer .second-footer-column,
+    .second-footer .second-footer-third-column,
+    .second-footer .second-footer-right-column {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .second-footer .second-footer-column {
+        margin-bottom: 22px;
+    }
+
+    .second-footer .app-button.app-button-second-footer {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header .logo {
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-bottom-row {
+        flex-wrap: wrap;
+    }
+    
+    .navigation-list {
+        width: 100%;
+        margin-bottom: 22px;
+        margin-top: 22px;
+    }
+
+    .header-right-column {
+        width: 100%;
+    }
+}
+
+@media(max-width: 992px) {
+    .navigation-list { 
+        min-width: 100%;
+    }
+
+    .logo-download {
+        margin-bottom: 48px;
+    }
+
     .tablet-margin-bottom {
         margin-bottom: 12px;
     }
@@ -23,17 +105,178 @@
     }
 
     .game-block .game-block--border,
-    .advantages .advantages--border {
+    .advantages .advantages--border,
+    .how-to-sign-up--padding,
+    .rating .rating--background,
+    .info .info-inner,
+    .casino .casino-inner,
+    .our-bonuses .our-bonuses-inner,
+    .faq .faq-inner,
+    .bonuses .bonuses-inner,
+    .download .download--background,
+    .general-information .general-information--border {
         padding: 22px;
+    }
+
+    .how-to-sign-up .how-to-sign-up--background {
+        background-position-x: 60%;
+    }
+
+    .how-to-sign-up h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .rating .rating--background h2,
+    .info .info-inner h2,
+    .casino .casino-inner h2,
+    .casino .casino-inner h2 span,
+    .our-bonuses .our-bonuses-inner h2,
+    .faq .faq-inner h2,
+    .bonuses .bonuses-inner h2,
+    .general-information h2 {
+        font-size: 25px;
+    }
+
+    .info .info-table-row-right,
+    .info .info-table-row-left {
+        width: 100%;
+    }
+
+    .info .info-table-row-left {
+        padding: 18px;
+    }
+    
+    .info .info-img-wrap {
+        margin-right: 12px;
+    }
+
+    .info .info-table-row-left:before {
+        height: 70%;
+    }
+    
+    .our-bonuses .our-bonuses-block-money {
+        max-width: 250px;
+    }
+    
+    .our-bonuses .button-border-hover span {
+        justify-content: center;
+    }
+
+    .our-bonuses .our-bonuses-step-block {
+        min-height: 180px;
+    }
+
+    .our-bonuses .our-bonuses-money-bg {
+        background-size: 50%;
+        background-position-y: 100%;
+        background-position-x: 130%;
+    }
+
+    .download .download--background {
+        background-image: none;
+    }
+
+    .footer-card .brands {
+        justify-content: center;
+    }
+
+    .footer-card .brands .img-wrap {
+        margin-bottom: 22px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    footer .logo {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px;
+    }
+
+    .footer-info-top {
+        flex-direction: column;
+    }
+
+    footer .app-button,
+    footer .navigation-list li a {
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+
+    .footer-info .navigation-list {
+        flex-direction: column;
+    }
+
+    .footer-info .navigation-list li a {
+        justify-content: center;
+    }
+
+    footer .footer-info p {
+        width: 100%;
+        margin-bottom: 24px;
+        max-width: unset;
+    }
+
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+}
+
+@media(max-width: 767px) {
+    .second-footer .second-footer-column,
+    .second-footer .second-footer-third-column,
+    .second-footer .second-footer-right-column {
+        width: 100%;
+        order: 2;
+    }
+
+    .second-footer-top a.second-footer-link {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .second-footer .second-footer-right-column {
+        order: 1;
+    }
+
+    .second-footer-login-buttons {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 22px;
+    }
+
+    .second-footer-login-buttons a{
+        margin-right: 0;
+        width: calc(50% - 10px);
     }
 }
 
 @media(max-width: 575px) {
+    .welcome-bonus .welcome-bonus-block {
+        background-image: url(../img/welcome-bonus-mobile-bg.png);
+    }
+
+    .welcome-bonus-block-mini h2 {
+        font-size: 30px;
+    }
+
+    .our-bonuses .our-bonuses-big-block h3 {
+        font-size: 24px;
+    }
+
     .mobile-margin-bottom {
         margin-bottom: 12px;
     }
 
-    .game-block-mini .game-block-mini--p {
+    .game-block-mini .game-block-mini--p,
+    .our-bonuses .our-bonuses-big-block p {
         font-size: 14px;
     }
 
@@ -42,7 +285,8 @@
         border: none;
     }
     
-    .welcome-bonus-block-mini p {
+    .welcome-bonus-block-mini p,
+    .faq .faq-inner h2 {
         text-align: center;
     }
 
@@ -77,5 +321,182 @@
     
     .button-border-hover span {
         justify-content: center;
+    }
+
+    .how-to-sign-up h2 {
+        font-size: 25px;
+    }
+
+    .how-to-sign-up .how-to-sign-up--accordion-button--text-bottom,
+    .how-to-sign-up .how-to-sign-up--accordion-list,
+    .bonuses .bonuses-inner .bonuses-block--game p,
+    .general-information p {
+        font-size: 14px;
+    }
+
+    .how-to-sign-up .how-to-sign-up--accordion-button--step {
+        width: 288px;
+        background-image: url(../img/mobile-step-bg.png);
+        background-size: 90%;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-left: 9%;
+    }
+
+    .how-to-sign-up .how-to-sign-up--accordion-button--step br {
+        display: none;
+    }
+
+    .how-to-sign-up .how-to-sign-up--accordion-card {
+        padding: 70px 15px 15px;
+    }
+
+    .how-to-sign-up .how-to-sign-up--accordion-button--step.ok {
+        left: 0;
+        background-image: url(../img/ok-arrow.png);
+        background-position-x: 0;
+        background-position-y: 50%;
+        background-size: 70%;
+        width: 100%;
+        padding: 0;
+        justify-content: flex-end;
+    }
+
+    .how-to-sign-up .how-to-sign-up--accordion-button--step.ok .mobile-bg {
+        display: flex;
+        width: 56px;
+        height: 56px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        background: var(--orange);
+    }
+
+    .how-to-sign-up .button-border-hover {
+        width: 100%;
+    }
+
+    .rating .rating--background h2,
+    .info .info-inner h2,
+    .our-bonuses .our-bonuses-inner h2,
+    .bonuses .bonuses-inner h2,
+    .general-information h2 {
+        text-align: center;
+    }
+
+    .rating .rating--background {
+        background: url(../img/bg-rating-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 100%;
+    }
+
+    .rating .rating-right-column {
+        height: 370px;
+        justify-content: center;
+    }
+
+    .rating .rating-right-column h4 br {
+        display: none;
+    }
+
+    .our-bonuses .our-bonuses-block,
+    .faq .faq-question-block,
+    .bonuses .bonuses-inner .bonuses--block .bonuses-block--game {
+        padding: 12px;
+    }
+
+    .our-bonuses .our-bonuses-money-bg {
+        background-size: 75%;
+    }
+
+    .faq .faq-question-block-number {
+        left: unset;
+        right: 2px;
+        background: var(--dark-blue);
+        color: #fff
+    }
+
+    .faq .faq-question-block h6 {
+        padding-right: 68px;
+    }
+
+    .faq .faq-question-block p {
+        font-size: 15px;
+    }
+
+    .faq .faq-inner {
+        padding: 15px;
+    }
+    
+    .bonuses .bonuses-inner .button-border-hover--green {
+        width: 100%;
+    }
+
+    .bonuses .bonuses-inner .bonuses--block .bonuses-block--game-border {
+        padding: 8px;
+    }
+
+    .download .download--block-button .button-border-hover--green span {
+        height: 72px;
+    }
+
+    .general-information h2 {
+        margin-bottom: 24px;
+    }
+
+    .footer-card .copyright p {
+        order: 2;
+    }
+
+    .footer-card .verification {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 22px;
+    }
+
+    .footer-card .copyright {
+        flex-direction: column;
+    }
+
+    .footer-card .copyright p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-card {
+        padding-bottom: 22px;
+    }
+
+    .mobile-header .logo img {
+        width: 90px;
+        height: auto;
+    }
+
+    .mobile-header .logo {
+        margin-right: 12px;
+    }
+
+    .bottom-menu-button-margin-right {
+        margin-right: 8px;
+    }
+
+    .mobile-header .app-button {
+        padding: 0 6px;
+    }
+
+    .mobile-header .button-border-hover span {
+        padding: 0 12px;
+    }
+
+    .footer-login-buttons {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .footer-login-buttons .button-border-hover:last-child {
+        margin-top: 0;
     }
 }
