@@ -19,5 +19,12 @@ $(document).ready(() => {
     $('.burger-button').click((e) => {
         e.preventDefault();
         $('.mobile-menu').toggleClass('d-none');
-    })
+    });
+
+    $('.bottom-menu-button').click((e) => {
+        e.preventDefault();
+        $('.hidden-menu').toggleClass('d-none');
+    });
+
+    // bottom-menu-button
 })

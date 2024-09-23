@@ -4,22 +4,27 @@
     }
 
     .footer-card .brands {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .footer-info .navigation-list {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .footer-login-buttons {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     
     footer .navigation-list li a {
         margin-right: 8px;
     }
 
-    .navigation-list {
+    footer .navigation-list {
         max-width: 60%;
     }
     
@@ -32,7 +37,8 @@
     }
 
     .second-footer .second-footer-top {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .second-footer .second-footer-column,
@@ -48,17 +54,24 @@
 
     .second-footer .app-button.app-button-second-footer {
         width: 100%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .header .logo {
         margin-right: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .menu-bottom-row {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     
     .navigation-list {
@@ -160,7 +173,9 @@
     }
     
     .our-bonuses .button-border-hover span {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .our-bonuses .our-bonuses-step-block {
@@ -178,7 +193,9 @@
     }
 
     .footer-card .brands {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .footer-card .brands .img-wrap {
@@ -186,18 +203,28 @@
     }
 
     .footer-inner {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     footer .logo {
         margin-right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-bottom: 18px;
     }
 
     .footer-info-top {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     footer .app-button,
@@ -207,11 +234,16 @@
     }
 
     .footer-info .navigation-list {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .footer-info .navigation-list li a {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     footer .footer-info p {
@@ -227,28 +259,58 @@
     .mobile-header {
         display: block;
     }
+
+
+    .rating .rating--background {
+        background: url(../img/bg-rating-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 140%;
+    }
+
+    .rating .rating-right-column {
+        height: 370px;
+        margin-top: 80px;
+    }
 }
 
 @media(max-width: 767px) {
+    .rating .rating--background {
+        background-position-y: 100%;
+    }
+
+    .rating .rating-right-column {
+        height: 370px;
+        margin-top: 20px;
+    }
+
     .second-footer .second-footer-column,
     .second-footer .second-footer-third-column,
     .second-footer .second-footer-right-column {
         width: 100%;
-        order: 2;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
 
     .second-footer-top a.second-footer-link {
         margin-right: 0;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .second-footer .second-footer-right-column {
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
     }
 
     .second-footer-login-buttons {
         width: 100%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-bottom: 22px;
     }
 
@@ -298,7 +360,8 @@
         padding: 0;
         padding-bottom: 12px;
         overflow: hidden;
-        box-shadow: 0px 10px 20px 0px #00000008;
+        -webkit-box-shadow: 0px 10px 20px 0px #00000008;
+                box-shadow: 0px 10px 20px 0px #00000008;
     }
 
     .mobile-padding-vertical {
@@ -320,7 +383,9 @@
     }
     
     .button-border-hover span {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .how-to-sign-up h2 {
@@ -338,8 +403,12 @@
         width: 288px;
         background-image: url(../img/mobile-step-bg.png);
         background-size: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 0;
         padding-left: 9%;
     }
@@ -360,15 +429,23 @@
         background-size: 70%;
         width: 100%;
         padding: 0;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
     }
 
     .how-to-sign-up .how-to-sign-up--accordion-button--step.ok .mobile-bg {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 56px;
         height: 56px;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         border-radius: 100px;
         background: var(--orange);
     }
@@ -385,16 +462,10 @@
         text-align: center;
     }
 
-    .rating .rating--background {
-        background: url(../img/bg-rating-mobile.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 100%;
-    }
-
     .rating .rating-right-column {
-        height: 370px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .rating .rating-right-column h4 br {
@@ -447,18 +518,27 @@
     }
 
     .footer-card .copyright p {
-        order: 2;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
 
     .footer-card .verification {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-bottom: 22px;
     }
 
     .footer-card .copyright {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .footer-card .copyright p{
@@ -492,11 +572,67 @@
     }
 
     .footer-login-buttons {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         width: 100%;
     }
 
     .footer-login-buttons .button-border-hover:last-child {
         margin-top: 0;
+    }
+}
+
+@media(max-width: 374px) {
+    .mobile-header .app-button {
+        padding: 0 6px;
+        margin-right: 4px;
+        font-size: 12px;
+    }
+
+    .lang-switch .chevron {
+        margin-left: 4px;
+    }
+
+    .mobile-header .button-border-hover span {
+        padding: 0 6px;
+        font-size: 13px;
+    }
+
+    .how-to-sign-up h2,
+    .faq .faq-inner h2,
+    .welcome-bonus-block-mini h2 {
+        font-size: 20px;
+    }
+
+    .how-to-sign-up .how-to-sign-up--accordion-button--step {
+        width: 100%;
+    }
+    .carousel-info img, .welcome-bonus-block img{
+        max-width: 20px;
+    }
+
+    .our-bonuses .our-bonuses-step-block {
+        padding: 16px;
+    }
+
+    .our-bonuses .our-bonuses-step-block .our-bonuses-step {
+        width: 80px;
+        padding-left: 25px;
+        font-size: 12px;
+    }
+
+    .bonuses .bonuses-inner .button-border-hover--green span,
+    .download .download--block-button .button-border-hover--green span {
+        font-size: 14px;
+    }
+
+    .info .info-table-row-left h6 {
+        font-size: 16px;
+    }
+
+    .rating .rating-right-column {
+        height: 85vw;
     }
 }
